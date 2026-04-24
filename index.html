@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision Design — Desarrollo de soluciones digitales</title>
+  <meta name="description" content="Invitaciones digitales, álbumes web, vCards y más. Diseño premium para eventos que merecen ser recordados." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-mark">V</span>
+      <span class="nav__logo-text">Vision Design</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto" class="nav__cta">Hablemos</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav__mobile" id="mobileMenu">
+    <ul>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Hablemos</a></li>
+    </ul>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Diseño digital · Merlo, Buenos Aires</p>
+      <h1 class="hero__title reveal">
+        Tu evento merece<br/>
+        <em>una experiencia</em><br/>
+        digital.
+      </h1>
+      <p class="hero__sub reveal">
+        Invitaciones interactivas, álbumes web y presencia digital<br/>
+        diseñados para emocionar — no solo informar.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#portfolio" class="btn btn--primary">Ver trabajos</a>
+        <a href="#contacto" class="btn btn--ghost">Consultar gratis</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── PROCESO ── -->
+  <section class="proceso section" id="proceso">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Cómo trabajo</span>
+        <h2 class="section__title">Un proceso claro,<br/><em>resultados que sorprenden</em></h2>
+      </div>
+
+      <div class="proceso__steps">
+
+        <div class="proceso__step reveal">
+          <div class="proceso__step-num">01</div>
+          <div class="proceso__step-content">
+            <h3>Consulta</h3>
+            <p>Charlamos sobre el evento, la temática, el público y el objetivo. Sin formularios complicados — solo una conversación para entender qué necesitás.</p>
+          </div>
+        </div>
+
+        <div class="proceso__step reveal">
+          <div class="proceso__step-num">02</div>
+          <div class="proceso__step-content">
+            <h3>Concepto</h3>
+            <p>Diseño una propuesta visual alineada con la identidad del evento. Paleta, tipografía, animaciones — todo pensado para generar una experiencia coherente.</p>
+          </div>
+        </div>
+
+        <div class="proceso__step reveal">
+          <div class="proceso__step-num">03</div>
+          <div class="proceso__step-content">
+            <h3>Desarrollo</h3>
+            <p>Construyo el producto digital con tecnología web moderna. Rápido, responsivo, y accesible desde cualquier dispositivo sin necesidad de instalar nada.</p>
+          </div>
+        </div>
+
+        <div class="proceso__step reveal">
+          <div class="proceso__step-num">04</div>
+          <div class="proceso__step-content">
+            <h3>Entrega</h3>
+            <p>Recibís un link listo para compartir. Puedo conectar RSVP, galería de fotos en tiempo real, y más. El evento pasa — la experiencia digital queda.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO ── -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Trabajos recientes</span>
+        <h2 class="section__title">Cada proyecto,<br/><em>una experiencia única</em></h2>
+      </div>
+
+      <div class="portfolio__grid">
+
+        <!-- Proyecto 1 -->
+        <article class="card reveal" data-tilt>
+          <div class="card__visual card__visual--grizzy">
+            <div class="card__tag">Invitación Digital</div>
+            <div class="card__mockup">
+              <div class="card__screen">
+                <div class="card__screen-content">
+                  <div class="card__screen-dot"></div>
+                  <div class="card__screen-dot"></div>
+                  <div class="card__screen-dot"></div>
+                  <p class="card__screen-title">Grizzy & The Lemmings</p>
+                  <p class="card__screen-sub">1er Cumpleaños de Tadeo</p>
+                  <div class="card__screen-bar"></div>
+                  <div class="card__screen-bar card__screen-bar--short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Invitación Tadeo</h3>
+            <p class="card__desc">Invitación interactiva temática con intro de video, efectos parallax, lemmings animados con audio y RSVP conectado a Google Sheets.</p>
+            <div class="card__tags">
+              <span>Video intro</span>
+              <span>Parallax</span>
+              <span>RSVP</span>
+              <span>Animaciones</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="card reveal" data-tilt>
+          <div class="card__visual card__visual--minecraft">
+            <div class="card__tag">Álbum Web</div>
+            <div class="card__mockup">
+              <div class="card__screen">
+                <div class="card__screen-content">
+                  <div class="card__screen-grid">
+                    <div class="card__pixel"></div>
+                    <div class="card__pixel card__pixel--2"></div>
+                    <div class="card__pixel card__pixel--3"></div>
+                    <div class="card__pixel card__pixel--4"></div>
+                  </div>
+                  <p class="card__screen-title">Álbum Minecraft</p>
+                  <p class="card__screen-sub">Fotos en tiempo real</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Álbum Minecraft</h3>
+            <p class="card__desc">Álbum fotográfico temático con Firebase Firestore, actualizaciones en tiempo real durante el evento y acceso por QR.</p>
+            <div class="card__tags">
+              <span>Firebase</span>
+              <span>Tiempo real</span>
+              <span>QR Access</span>
+              <span>Temático</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="card reveal" data-tilt>
+          <div class="card__visual card__visual--vcard">
+            <div class="card__tag">vCard Digital</div>
+            <div class="card__mockup">
+              <div class="card__screen">
+                <div class="card__screen-content card__screen-content--vcard">
+                  <div class="card__avatar"></div>
+                  <p class="card__screen-title">Daniel</p>
+                  <p class="card__screen-sub">Developer & Designer</p>
+                  <div class="card__screen-links">
+                    <div class="card__link-dot"></div>
+                    <div class="card__link-dot"></div>
+                    <div class="card__link-dot"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">vCard Personal</h3>
+            <p class="card__desc">Tarjeta digital interactiva con chatbot integrado, descarga de contacto .vcf, paleta dark/violeta y QR para distribución física.</p>
+            <div class="card__tags">
+              <span>Chatbot</span>
+              <span>QR</span>
+              <span>Dark mode</span>
+              <span>.vcf</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICIOS ── -->
+  <section class="servicios section" id="servicios">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Lo que ofrezco</span>
+        <h2 class="section__title">Servicios diseñados<br/><em>para cada etapa del evento</em></h2>
+      </div>
+
+      <div class="servicios__grid">
+
+        <div class="servicio reveal">
+          <div class="servicio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/><circle cx="12" cy="15" r="2"/></svg>
+          </div>
+          <h3>Invitaciones Digitales</h3>
+          <p>Interactivas, temáticas, con RSVP integrado. Personalizadas para cumpleaños, bodas, bautismos y más.</p>
+        </div>
+
+        <div class="servicio reveal">
+          <div class="servicio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Álbumes Web</h3>
+          <p>Galerías fotográficas con actualización en tiempo real durante el evento. Acceso por QR, compartibles al instante.</p>
+        </div>
+
+        <div class="servicio reveal">
+          <div class="servicio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+          </div>
+          <h3>vCards Digitales</h3>
+          <p>Tarjetas de presentación interactivas con links, chatbot opcional y QR. Perfectas para profesionales y emprendedores.</p>
+        </div>
+
+        <div class="servicio reveal">
+          <div class="servicio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h12"/></svg>
+          </div>
+          <h3>Landing Pages</h3>
+          <p>Páginas de presentación para eventos, negocios o proyectos. Diseño premium, rápidas y optimizadas para conversión.</p>
+        </div>
+
+        <div class="servicio reveal">
+          <div class="servicio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><path d="M13 17h2m4 0h-2m0 0V13m0 4v4"/></svg>
+          </div>
+          <h3>Soluciones QR</h3>
+          <p>QR estáticos y dinámicos vinculados a cualquier experiencia digital. Diseñados para impresión y distribución física.</p>
+        </div>
+
+        <div class="servicio reveal">
+          <div class="servicio__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Identidad & Branding</h3>
+          <p>Logos, paletas, tipografías y guías de estilo para negocios que quieren comunicar con coherencia visual.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIOS ── -->
+  <section class="testimonios section" id="testimonios">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Lo que dicen</span>
+        <h2 class="section__title">Familias y organizadores<br/><em>que confiaron en Vision Design</em></h2>
+      </div>
+
+      <div class="testimonios__grid">
+        <blockquote class="testimonio reveal">
+          <p>"La invitación de Tadeo fue lo más lindo que vimos. Los invitados no podían creer que era una página web — pensaban que era una app."</p>
+          <footer>
+            <span class="testimonio__name">Familia del festejado</span>
+            <span class="testimonio__event">1er Cumpleaños · Grizzy & Lemmings</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonio reveal">
+          <p>"El álbum en tiempo real fue el hit del cumpleaños. Los chicos subían fotos desde sus celulares y aparecían al instante en la pantalla del salón."</p>
+          <footer>
+            <span class="testimonio__name">Organizadora del evento</span>
+            <span class="testimonio__event">Cumpleaños temático · Minecraft</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA FINAL ── -->
+  <section class="cta-final section" id="contacto">
+    <div class="cta-final__bg">
+      <div class="cta-final__orb"></div>
+    </div>
+    <div class="container">
+      <div class="cta-final__content reveal">
+        <span class="section__label">¿Tenés un evento en mente?</span>
+        <h2 class="cta-final__title">Contame tu idea.<br/><em>La transformamos en algo memorable.</em></h2>
+        <p class="cta-final__sub">La primera consulta es sin costo y sin compromiso. Charlamos, entiendo qué necesitás, y te doy una propuesta.</p>
+
+        <div class="cta-final__actions">
+          <a href="https://wa.me/5491100000000?text=Hola%20Daniel%2C%20vi%20tu%20landing%20y%20me%20interesa%20consultar%20sobre%20un%20proyecto." class="btn btn--whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <div class="cta-final__form">
+          <h3 class="cta-final__form-title">O dejame tus datos</h3>
+          <form id="contactForm" class="form" novalidate>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" />
+              </div>
+              <div class="form__field">
+                <label for="evento">Tipo de evento</label>
+                <select id="evento" name="evento">
+                  <option value="">Seleccioná</option>
+                  <option>Cumpleaños infantil</option>
+                  <option>Cumpleaños adulto</option>
+                  <option>Casamiento / Boda</option>
+                  <option>Bautismo / Comunión</option>
+                  <option>Negocio / Emprendimiento</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__field">
+              <label for="mensaje">¿Cómo puedo ayudarte?</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contame brevemente de qué se trata tu proyecto..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Enviar consulta</button>
+          </form>
+          <div class="form__success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <p>¡Mensaje recibido! Te respondo a la brevedad.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo-mark">V</span>
+          <div>
+            <p class="footer__name">Vision Design</p>
+            <p class="footer__tagline">Experiencias digitales para eventos memorables</p>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="#proceso">Proceso</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <p class="footer__copy">© 2025 Vision Design · Marcos Paz, Buenos Aires</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
