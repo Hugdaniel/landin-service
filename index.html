@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vision Design — Desarrollo de soluciones digitales</title>
+  <title>Vision Design — Experiencias Digitales para Eventos</title>
   <meta name="description" content="Invitaciones digitales, álbumes web, vCards y más. Diseño premium para eventos que merecen ser recordados." />
 
   <!-- Fonts -->
@@ -51,7 +51,7 @@
     </div>
 
     <div class="hero__content">
-      <p class="hero__eyebrow reveal">Diseño digital · Merlo, Buenos Aires</p>
+      <p class="hero__eyebrow reveal">Diseño digital · Marcos Paz, Buenos Aires</p>
       <h1 class="hero__title reveal">
         Tu evento merece<br/>
         <em>una experiencia</em><br/>
@@ -130,7 +130,7 @@
       <div class="portfolio__grid">
 
         <!-- Proyecto 1 -->
-        <article class="card reveal" data-tilt>
+        <article class="card reveal" data-tilt data-url="https://invitacion-tadeo.pages.dev/">
           <div class="card__visual card__visual--grizzy">
             <div class="card__tag">Invitación Digital</div>
             <div class="card__mockup">
@@ -156,11 +156,15 @@
               <span>RSVP</span>
               <span>Animaciones</span>
             </div>
+            <button class="card__preview-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+              Ver proyecto
+            </button>
           </div>
         </article>
 
         <!-- Proyecto 2 -->
-        <article class="card reveal" data-tilt>
+        <article class="card reveal" data-tilt data-url="https://album-diego.pages.dev/">
           <div class="card__visual card__visual--minecraft">
             <div class="card__tag">Álbum Web</div>
             <div class="card__mockup">
@@ -187,11 +191,15 @@
               <span>QR Access</span>
               <span>Temático</span>
             </div>
+            <button class="card__preview-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+              Ver proyecto
+            </button>
           </div>
         </article>
 
         <!-- Proyecto 3 -->
-        <article class="card reveal" data-tilt>
+        <article class="card reveal" data-tilt data-url="https://vcard-visiondesign.pages.dev/">
           <div class="card__visual card__visual--vcard">
             <div class="card__tag">vCard Digital</div>
             <div class="card__mockup">
@@ -218,6 +226,10 @@
               <span>Dark mode</span>
               <span>.vcf</span>
             </div>
+            <button class="card__preview-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+              Ver proyecto
+            </button>
           </div>
         </article>
 
@@ -391,6 +403,32 @@
       </div>
     </div>
   </footer>
+
+  <!-- ── MODAL PREVIEW ── -->
+  <div class="modal" id="previewModal" role="dialog" aria-modal="true" aria-label="Preview del proyecto">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__container">
+      <div class="modal__header">
+        <span class="modal__title" id="modalTitle"></span>
+        <div class="modal__actions">
+          <a class="modal__external" id="modalExternal" target="_blank" rel="noopener" title="Abrir en nueva pestaña">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Abrir en nueva pestaña
+          </a>
+          <button class="modal__close" id="modalClose" aria-label="Cerrar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal__body">
+        <div class="modal__loader" id="modalLoader">
+          <div class="modal__spinner"></div>
+          <p>Cargando proyecto...</p>
+        </div>
+        <iframe class="modal__iframe" id="modalIframe" title="Preview del proyecto" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>

@@ -201,3 +201,81 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// ── Modal de preview ──────────────────────────────────
+const modal        = document.getElementById('previewModal');
+const modalIframe  = document.getElementById('modalIframe');
+const modalTitle   = document.getElementById('modalTitle');
+const modalExternal= document.getElementById('modalExternal');
+const modalClose   = document.getElementById('modalClose');
+const modalBackdrop= document.getElementById('modalBackdrop');
+const modalLoader  = document.getElementById('modalLoader');
+
+// Nombres para el título del modal según la URL
+const projectNames = {
+  'invitacion-tadeo': 'Invitación Tadeo — Grizzy & The Lemmings',
+  'album-diego':      'Álbum Minecraft',
+  'vcard-visiondesign': 'vCard Personal — Vision Design',
+};
+
+function openModal(url) {
+  // Detectar el nombre del proyecto desde la URL
+  const key = Object.keys(projectNames).find(k => url.includes(k));
+  const name = key ? projectNames[key] : url;
+
+  modalTitle.textContent = name;
+  modalExternal.href = url;
+
+  // Mostrar loader, limpiar iframe anterior
+  modalLoader.classList.remove('hidden');
+  modalIframe.src = '';
+
+  // Abrir modal
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  // Cargar el iframe
+  // Pequeño delay para que la animación de apertura no compita con la carga
+  setTimeout(() => {
+    modalIframe.src = url;
+  }, 150);
+
+  // Ocultar loader cuando cargue el iframe
+  modalIframe.onload = () => {
+    modalLoader.classList.add('hidden');
+  };
+}
+
+function closeModal() {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+
+  // Limpiar iframe al cerrar para parar audio/video
+  setTimeout(() => {
+    modalIframe.src = '';
+    modalLoader.classList.remove('hidden');
+  }, 300);
+}
+
+// Click en botones "Ver proyecto"
+document.querySelectorAll('.card__preview-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation(); // No propagar al tilt
+    const card = btn.closest('[data-url]');
+    const url = card?.dataset.url;
+    if (url) openModal(url);
+  });
+});
+
+// Cerrar con botón X
+modalClose.addEventListener('click', closeModal);
+
+// Cerrar al hacer click en el backdrop
+modalBackdrop.addEventListener('click', closeModal);
+
+// Cerrar con Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.classList.contains('open')) {
+    closeModal();
+  }
+});
