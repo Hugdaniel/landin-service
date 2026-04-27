@@ -176,6 +176,12 @@ ul { list-style: none; }
   gap: 0.6rem;
 }
 
+.nav__logo img {
+  width: 34px;
+  height: 34px;
+
+}
+
 .nav__logo-mark {
   width: 34px; height: 34px;
   background: var(--accent);
@@ -526,6 +532,7 @@ ul { list-style: none; }
   border-radius: 10px;
   padding: 1rem;
   backdrop-filter: blur(10px);
+  margin-top: 2.8rem;
 }
 
 .card__screen-content {
@@ -899,6 +906,11 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.footer__brand img {
+  width: 36px; 
+  height: 36px;
 }
 
 .footer__name {
