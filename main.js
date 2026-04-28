@@ -140,17 +140,16 @@ if (form) {
     btn.disabled = true;
     btn.style.opacity = '0.7';
 
-    // ── Para conectar a Google Sheets, reemplazar esto: ──
-    // const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/TU_ID/formResponse';
-    // const formData = new FormData();
-    // formData.append('entry.XXXXX', nombre);   // ID del campo nombre
-    // formData.append('entry.XXXXX', evento);   // ID del campo evento
-    // formData.append('entry.XXXXX', mensaje);  // ID del campo mensaje
-    // await fetch(GOOGLE_FORM_URL, { method: 'POST', body: formData, mode: 'no-cors' });
+    // ── Envío a Google Forms ─────────────────────────────
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdRZ735c3KC22foxbGJaDjxnX6x77j8AFaJBUYLL9Fsj9vaIw/formResponse';
+    const formData = new FormData();
+    formData.append('entry.1627463590', nombre);
+    formData.append('entry.674460941',  evento);
+    formData.append('entry.2010630178', mensaje);
+    // mode: 'no-cors' — Google Forms no permite CORS, pero el envío igual funciona.
+    // No podemos leer la respuesta, pero los datos llegan a tu hoja de cálculo.
+    await fetch(GOOGLE_FORM_URL, { method: 'POST', body: formData, mode: 'no-cors' });
     // ─────────────────────────────────────────────────────
-
-    // Simulación (remover cuando conectes Google Forms)
-    await new Promise(resolve => setTimeout(resolve, 1200));
 
     // Mostrar éxito
     form.style.display = 'none';
